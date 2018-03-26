@@ -34,16 +34,8 @@ header {
 	color: white;
 }
 
-.menu > #inicio{
+.menu > #paisajes{
 	text-decoration: none;
-}
-
-.contenedor1{
-
-	background-color: #82c3a6;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
 }
 #imagen1 > img{
 	width: 200px;
@@ -66,19 +58,6 @@ header {
 .contenido > div{
 	margin: 20px;
 }
-#imagen2 > img:hover{
-  transform:rotate(10deg);
-	transition-duration: 3s;
-	-webkit-box-shadow: 2px 2px 5px #82c3a6;
-	border: 2px ;
-}
-
-#imagen3 > img:hover{
-	transform: translate3d(20px,-5px,00px);
-	transition-duration: 3s;
-	-webkit-box-shadow: 2px 2px 5px #82c3a6;
-	border: 2px ;
-}
 
 .footer{
 	border-radius: 0px 0px 10px 10px;
@@ -97,7 +76,7 @@ header {
 
 img{
 	-webkit-box-shadow: 2px 2px #02010a;
-	width: 100px;
+	width: 200px;
 }
 #mail {
 	color: white;
@@ -105,9 +84,17 @@ img{
 }
 body{
 	margin: 10px auto;
-max-width: 900px;
-align-items:center;
+  max-width: 900px;
+  align-items:center;
 	background-color: #02010a;
+}
+#imagen1 > img{
+	filter: blur(10px);
+}
+#imagen3 > img{
+	-webkit-filter: sepia(90%);
+}
 
-
+.contenido > div:nth-child(even){
+	filter: grayscale(100%);
 }
